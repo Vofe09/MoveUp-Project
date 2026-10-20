@@ -1,0 +1,3592 @@
+{
+  "schema_version": 1,
+  "sessions": [
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "2b70d9ee-f4d0-410b-b70a-04a375fa183c",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T13:58:53Z",
+      "ended_at": "2026-10-16T13:59:33Z",
+      "duration_seconds": 40.754,
+      "status": "completed",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 30.0,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "b7f157b2-9a68-409b-831a-e981835f6002",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T15:15:35Z",
+      "ended_at": "2026-10-16T15:16:15Z",
+      "duration_seconds": 39.475,
+      "status": "completed",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 30.0,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "c78db9d5-5af5-4928-90a0-7831885bfa78",
+      "game_id": "maze",
+      "game_title": "Cyber Maze",
+      "started_at": "2026-10-16T15:37:28Z",
+      "ended_at": "2026-10-16T15:37:34Z",
+      "duration_seconds": 6.193,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Попытки прохождения",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Успешные прохождения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "wallCollisionCount": {
+          "label": "Столкновения со стенами",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 4.748,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToShortestRoutePx": {
+          "label": "Среднее расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToShortestRoutePx": {
+          "label": "Максимальное расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "completionRatePct": {
+          "label": "Доля успешных прохождений от всех попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 700
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "difficulty_levels_used": [
+          "Средний"
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "route_deviation_method": "minimum Euclidean distance to any segment of the BFS shortest route"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "e5574dcf-d7fe-499a-bf14-07f710024aa2",
+            "outcome": "interrupted",
+            "completed": false,
+            "duration_seconds": 4.748167376999845,
+            "difficulty": "Средний",
+            "wall_collisions": 0,
+            "hint_count": 0,
+            "path_length_px": 0.0,
+            "speed_sum_px_per_second": 0.0,
+            "speed_squared_sum": 0.0,
+            "speed_samples": 296,
+            "max_speed_px_per_second": 0.0,
+            "movement_active_seconds": 0.0,
+            "active_movement_distance_px": 0.0,
+            "deviation_sum_px": 0.0,
+            "deviation_samples": 296,
+            "max_deviation_px": 0.0,
+            "first_movement_latency_seconds": null,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "7dbccf9d-67ab-4c1a-b3d8-40f0518065c3",
+      "game_id": "minefield",
+      "game_title": "Cyber Minefield",
+      "started_at": "2026-10-16T15:38:10Z",
+      "ended_at": "2026-10-16T15:38:42Z",
+      "duration_seconds": 31.61,
+      "status": "completed",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые попытки",
+          "value": 3,
+          "unit": "шт."
+        },
+        "roundsResolved": {
+          "label": "Завершённые попытки",
+          "value": 3,
+          "unit": "шт."
+        },
+        "roundsWon": {
+          "label": "Успешно пройденные поля",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsFailed": {
+          "label": "Неудачные попытки (мина)",
+          "value": 2,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "totalMineHits": {
+          "label": "Попадания на мину",
+          "value": 2,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 20.76,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 1928.494,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 92.893,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 216.175,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 365.732,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 120.737,
+          "unit": "px/сек"
+        },
+        "averageDistanceToPathCenterlinePx": {
+          "label": "Среднее расстояние до центральной линии пути",
+          "value": 10.739,
+          "unit": "px"
+        },
+        "maxDistanceToPathCenterlinePx": {
+          "label": "Максимальное расстояние до центральной линии пути",
+          "value": 32.627,
+          "unit": "px"
+        },
+        "successRatePct": {
+          "label": "Доля побед среди завершённых попыток",
+          "value": 33.333,
+          "unit": "%"
+        },
+        "averageTimeToFirstMovementSeconds": {
+          "label": "Среднее время до первого движения",
+          "value": 1.012,
+          "unit": "сек."
+        },
+        "averageRoundDurationSeconds": {
+          "label": "Средняя длительность завершённой попытки",
+          "value": 6.92,
+          "unit": "сек."
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 620,
+          "height": 730
+        },
+        "grid_size_cells": 10,
+        "cell_size_px": 62,
+        "initial_path_reveal_seconds": 5.0,
+        "hint_display_seconds": 2.0,
+        "movement_active_threshold_px_per_second": 5.0,
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "path_deviation_method": "minimum Euclidean distance to any segment of the generated route centerline"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "df294da3-dbf1-457b-bf84-b5cdfde66539",
+            "outcome": "mine_hit",
+            "terminal": true,
+            "won": false,
+            "duration_seconds": 3.222169644999667,
+            "collision_count": 1,
+            "hint_count": 0,
+            "path_length_px": 208.2531882740988,
+            "speed_sum_px_per_second": 12993.735864974933,
+            "speed_squared_sum": 3626388.8142406465,
+            "speed_samples": 201,
+            "max_speed_px_per_second": 365.73233255964493,
+            "movement_active_seconds": 0.834135265000441,
+            "active_movement_distance_px": 208.25220389909876,
+            "deviation_sum_px": 1778.0358594271172,
+            "deviation_samples": 201,
+            "max_path_deviation_px": 31.790000000000006,
+            "first_movement_latency_seconds": 1.1236852309993992,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          },
+          {
+            "round_id": "c96b8210-c8ed-4203-966b-81b24b8c1fdf",
+            "outcome": "mine_hit",
+            "terminal": true,
+            "won": false,
+            "duration_seconds": 7.325292976000128,
+            "collision_count": 1,
+            "hint_count": 0,
+            "path_length_px": 612.6066428084185,
+            "speed_sum_px_per_second": 38225.62292151586,
+            "speed_squared_sum": 9809901.514323393,
+            "speed_samples": 457,
+            "max_speed_px_per_second": 304.15892862862415,
+            "movement_active_seconds": 2.597426802998598,
+            "active_movement_distance_px": 612.6046740584186,
+            "deviation_sum_px": 5643.7894110657135,
+            "deviation_samples": 457,
+            "max_path_deviation_px": 32.62744735015522,
+            "first_movement_latency_seconds": 1.0047238389997801,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          },
+          {
+            "round_id": "8146ff87-ca1e-4463-a611-1703573bc2eb",
+            "outcome": "won",
+            "terminal": true,
+            "won": true,
+            "duration_seconds": 10.21294635600043,
+            "collision_count": 0,
+            "hint_count": 1,
+            "path_length_px": 1107.6337045172377,
+            "speed_sum_px_per_second": 69020.19716491563,
+            "speed_squared_sum": 16605459.964776197,
+            "speed_samples": 637,
+            "max_speed_px_per_second": 286.35398481246165,
+            "movement_active_seconds": 5.489385565999328,
+            "active_movement_distance_px": 1107.633001392238,
+            "deviation_sum_px": 6485.702524585992,
+            "deviation_samples": 637,
+            "max_path_deviation_px": 22.522281250000162,
+            "first_movement_latency_seconds": 0.9089019990005909,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "5de855ed-829b-4dfc-89b9-640018fec333",
+      "game_id": "platformer",
+      "game_title": "Elemental Run",
+      "started_at": "2026-10-16T15:50:50Z",
+      "ended_at": "2026-10-16T15:52:21Z",
+      "duration_seconds": 91.264,
+      "status": "completed",
+      "metrics": {
+        "levelAttempts": {
+          "label": "Попытки прохождения уровня",
+          "value": 2,
+          "unit": "шт."
+        },
+        "levelsCompleted": {
+          "label": "Успешно пройденные уровни",
+          "value": 1,
+          "unit": "шт."
+        },
+        "levelAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "levelAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "deaths": {
+          "label": "Смерти персонажей",
+          "value": 2,
+          "unit": "шт."
+        },
+        "runesCollected": {
+          "label": "Собранные руны",
+          "value": 18,
+          "unit": "шт."
+        },
+        "runeCollectionRatePct": {
+          "label": "Доля собранных рун",
+          "value": 90.0,
+          "unit": "%"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 79.264,
+          "unit": "сек."
+        },
+        "firePathLengthPx": {
+          "label": "Траектория персонажа Огня",
+          "value": 12836.155,
+          "unit": "px"
+        },
+        "waterPathLengthPx": {
+          "label": "Траектория персонажа Воды",
+          "value": 11608.145,
+          "unit": "px"
+        },
+        "fireMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Огня",
+          "value": 754.894,
+          "unit": "px/сек"
+        },
+        "waterMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Воды",
+          "value": 746.726,
+          "unit": "px/сек"
+        },
+        "levelCompletionRatePct": {
+          "label": "Доля успешных попыток",
+          "value": 50.0,
+          "unit": "%"
+        },
+        "averageLevelCompletionSeconds": {
+          "label": "Среднее время успешного прохождения",
+          "value": 24.719,
+          "unit": "сек."
+        },
+        "fastestLevelCompletionSeconds": {
+          "label": "Лучшее время прохождения уровня",
+          "value": 24.719,
+          "unit": "сек."
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "movement_model": "two character platformer; speeds and distances measured in game-world pixels",
+        "levels_used": [
+          "ИСКРА"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "level_index": 0,
+            "level_name": "ИСКРА",
+            "difficulty": 1,
+            "outcome": "restarted",
+            "duration_seconds": 54.545,
+            "deaths": 2,
+            "runes_collected": 8,
+            "runes_available": 10,
+            "fire_path_length_px": 8795.126,
+            "water_path_length_px": 7644.709,
+            "fire_max_speed_px_per_second": 700.56,
+            "water_max_speed_px_per_second": 746.726
+          },
+          {
+            "level_index": 0,
+            "level_name": "ИСКРА",
+            "difficulty": 1,
+            "outcome": "completed",
+            "duration_seconds": 24.719,
+            "deaths": 0,
+            "runes_collected": 10,
+            "runes_available": 10,
+            "fire_path_length_px": 4041.029,
+            "water_path_length_px": 3963.436,
+            "fire_max_speed_px_per_second": 754.894,
+            "water_max_speed_px_per_second": 746.726
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "a321b84c-bb01-46a3-a5df-ab0a294616fc",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T15:52:56Z",
+      "ended_at": "2026-10-16T15:53:11Z",
+      "duration_seconds": 15.459,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 10.021,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 838.711,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 83.695,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 21.595,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 30.053,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "b24fdf8d-7442-4378-88c4-345b35682262",
+            "drawing": "Квадрат",
+            "difficulty": "Легкий",
+            "outcome": "interrupted",
+            "duration_seconds": 10.021,
+            "trail_length_px": 838.711,
+            "ideal_path_length_px": 3080.0,
+            "mean_deviation_from_path_px": 21.595,
+            "average_cursor_speed_px_per_second": 83.692,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 30.053,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 634,
+            "target_path_points_count": 97
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "5cedb39a-ea4c-442a-8f46-d18c5bbd283f",
+      "game_id": "puzzle",
+      "game_title": "MoveUp Puzzle",
+      "started_at": "2026-10-16T15:53:26Z",
+      "ended_at": "2026-10-16T15:54:27Z",
+      "duration_seconds": 60.962,
+      "status": "completed",
+      "metrics": {
+        "puzzleAttempts": {
+          "label": "Попытки сборки пазла",
+          "value": 1,
+          "unit": "шт."
+        },
+        "puzzlesCompleted": {
+          "label": "Успешно собранные пазлы",
+          "value": 1,
+          "unit": "шт."
+        },
+        "puzzleAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "puzzleAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "piecesPlaced": {
+          "label": "Размещённые детали",
+          "value": 9,
+          "unit": "шт."
+        },
+        "placementAttempts": {
+          "label": "Попытки размещения деталей",
+          "value": 12,
+          "unit": "шт."
+        },
+        "placementErrors": {
+          "label": "Ошибочные размещения",
+          "value": 3,
+          "unit": "шт."
+        },
+        "successfulPlacementRatePct": {
+          "label": "Успешные размещения от всех попыток",
+          "value": 75.0,
+          "unit": "%"
+        },
+        "pieceCompletionRatePct": {
+          "label": "Доля размещённых деталей",
+          "value": 100.0,
+          "unit": "%"
+        },
+        "totalScore": {
+          "label": "Суммарный игровой счёт",
+          "value": 846,
+          "unit": "очков"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время сборки",
+          "value": 53.444,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 11826.296,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время сборки",
+          "value": 221.284,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость активного движения",
+          "value": 309.926,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 16679.231,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 375.402,
+          "unit": "px/сек"
+        },
+        "puzzleCompletionRatePct": {
+          "label": "Доля завершённых пазлов",
+          "value": 100.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "grid_sizes_used": [
+          3
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "f5b0ee56-f062-4560-a021-020f80146c97",
+            "picture": "Горное озеро",
+            "grid_size": 3,
+            "outcome": "completed",
+            "duration_seconds": 53.444,
+            "total_pieces": 9,
+            "pieces_placed": 9,
+            "placement_attempts": 12,
+            "placement_errors": 3,
+            "successfulPlacementRatePct": 75.0,
+            "score": 846,
+            "cursor_path_length_px": 11826.296,
+            "average_cursor_speed_px_per_second": 221.283,
+            "average_active_movement_speed_px_per_second": 309.929,
+            "active_movement_distance_px": 11817.779,
+            "active_movement_seconds": 38.131,
+            "max_cursor_speed_px_per_second": 16679.231
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "4e172ec0-ebef-4ef1-99df-1f53bdd90fee",
+      "game_id": "minefield",
+      "game_title": "Cyber Minefield",
+      "started_at": "2026-10-16T15:55:33Z",
+      "ended_at": "2026-10-16T15:55:43Z",
+      "duration_seconds": 10.31,
+      "status": "completed",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsResolved": {
+          "label": "Завершённые попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsWon": {
+          "label": "Успешно пройденные поля",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsFailed": {
+          "label": "Неудачные попытки (мина)",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "totalMineHits": {
+          "label": "Попадания на мину",
+          "value": 1,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 5.395,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 40.037,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 7.422,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 313.546,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 389.556,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 49.159,
+          "unit": "px/сек"
+        },
+        "averageDistanceToPathCenterlinePx": {
+          "label": "Среднее расстояние до центральной линии пути",
+          "value": 0.505,
+          "unit": "px"
+        },
+        "maxDistanceToPathCenterlinePx": {
+          "label": "Максимальное расстояние до центральной линии пути",
+          "value": 38.404,
+          "unit": "px"
+        },
+        "successRatePct": {
+          "label": "Доля побед среди завершённых попыток",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "averageTimeToFirstMovementSeconds": {
+          "label": "Среднее время до первого движения",
+          "value": 5.283,
+          "unit": "сек."
+        },
+        "averageRoundDurationSeconds": {
+          "label": "Средняя длительность завершённой попытки",
+          "value": 5.395,
+          "unit": "сек."
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 620,
+          "height": 730
+        },
+        "grid_size_cells": 10,
+        "cell_size_px": 62,
+        "initial_path_reveal_seconds": 5.0,
+        "hint_display_seconds": 2.0,
+        "movement_active_threshold_px_per_second": 5.0,
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "path_deviation_method": "minimum Euclidean distance to any segment of the generated route centerline"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "187d5e1a-0170-490c-96fe-00e986bba8c4",
+            "outcome": "mine_hit",
+            "terminal": true,
+            "won": false,
+            "duration_seconds": 5.394559178000236,
+            "collision_count": 1,
+            "hint_count": 0,
+            "path_length_px": 40.03701199331815,
+            "speed_sum_px_per_second": 2503.477874660466,
+            "speed_squared_sum": 832989.8986085262,
+            "speed_samples": 337,
+            "max_speed_px_per_second": 389.55592613412875,
+            "movement_active_seconds": 0.12769090100027825,
+            "active_movement_distance_px": 40.03701199331815,
+            "deviation_sum_px": 170.341702023854,
+            "deviation_samples": 337,
+            "max_path_deviation_px": 38.403613297522654,
+            "first_movement_latency_seconds": 5.282534541000132,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "29d19baf-3bc5-4b50-95ec-8f5e91ac4fb5",
+      "game_id": "neon_highway",
+      "game_title": "Neon Highway",
+      "started_at": "2026-10-16T16:04:08Z",
+      "ended_at": "2026-10-16T16:05:14Z",
+      "duration_seconds": 66.504,
+      "status": "completed",
+      "metrics": {
+        "runsPlayed": {
+          "label": "Игровые заезды",
+          "value": 2,
+          "unit": "шт."
+        },
+        "runsCompleted": {
+          "label": "Завершённые заезды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 1980,
+          "unit": "очков"
+        },
+        "distanceKm": {
+          "label": "Общая дистанция",
+          "value": 2.5,
+          "unit": "км"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время за рулём",
+          "value": 58.955,
+          "unit": "сек."
+        },
+        "collisions": {
+          "label": "Столкновения",
+          "value": 3,
+          "unit": "шт."
+        },
+        "nearMisses": {
+          "label": "Опасные сближения",
+          "value": 1,
+          "unit": "шт."
+        },
+        "overtakes": {
+          "label": "Обгоны",
+          "value": 27,
+          "unit": "шт."
+        },
+        "bonusPickups": {
+          "label": "Собранные бонусы",
+          "value": 8,
+          "unit": "шт."
+        },
+        "laneChanges": {
+          "label": "Смены полосы",
+          "value": 22,
+          "unit": "шт."
+        },
+        "averageSpeedKmh": {
+          "label": "Средняя скорость",
+          "value": 152.649,
+          "unit": "км/ч"
+        },
+        "maxSpeedKmh": {
+          "label": "Максимальная скорость",
+          "value": 173.859,
+          "unit": "км/ч"
+        },
+        "steeringPathPx": {
+          "label": "Траектория руления",
+          "value": 5926.696,
+          "unit": "px"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Режимы чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1280,
+          "height": 720
+        },
+        "lane_count": 4,
+        "same_direction_lanes": [
+          3,
+          4
+        ],
+        "oncoming_lanes": [
+          1,
+          2
+        ],
+        "steering_preset_used": [
+          "Средняя"
+        ],
+        "joystick_deadzone": 0.14
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "75eac028-4939-4034-91f0-7fe7c482ef10",
+      "game_id": "neon_highway",
+      "game_title": "Neon Highway",
+      "started_at": "2026-10-16T16:10:36Z",
+      "ended_at": "2026-10-16T16:11:46Z",
+      "duration_seconds": 70.13,
+      "status": "completed",
+      "metrics": {
+        "runsPlayed": {
+          "label": "Игровые заезды",
+          "value": 2,
+          "unit": "шт."
+        },
+        "runsCompleted": {
+          "label": "Завершённые заезды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 1990,
+          "unit": "очков"
+        },
+        "distanceKm": {
+          "label": "Общая дистанция",
+          "value": 2.244,
+          "unit": "км"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время за рулём",
+          "value": 53.657,
+          "unit": "сек."
+        },
+        "collisions": {
+          "label": "Столкновения",
+          "value": 3,
+          "unit": "шт."
+        },
+        "nearMisses": {
+          "label": "Опасные сближения",
+          "value": 1,
+          "unit": "шт."
+        },
+        "overtakes": {
+          "label": "Обгоны",
+          "value": 35,
+          "unit": "шт."
+        },
+        "bonusPickups": {
+          "label": "Собранные бонусы",
+          "value": 4,
+          "unit": "шт."
+        },
+        "laneChanges": {
+          "label": "Смены полосы",
+          "value": 30,
+          "unit": "шт."
+        },
+        "difficultyBoosts": {
+          "label": "Уровни усложнения",
+          "value": 4,
+          "unit": "нажатий"
+        },
+        "maxTrafficIntensity": {
+          "label": "Максимальная интенсивность трафика",
+          "value": 2.0,
+          "unit": "x"
+        },
+        "averageSpeedKmh": {
+          "label": "Средняя скорость",
+          "value": 150.588,
+          "unit": "км/ч"
+        },
+        "maxSpeedKmh": {
+          "label": "Максимальная скорость",
+          "value": 169.884,
+          "unit": "км/ч"
+        },
+        "steeringPathPx": {
+          "label": "Траектория руления",
+          "value": 5381.684,
+          "unit": "px"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Режимы чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1280,
+          "height": 720
+        },
+        "lane_count": 4,
+        "same_direction_lanes": [
+          3,
+          4
+        ],
+        "oncoming_lanes": [
+          1,
+          2
+        ],
+        "player_can_enter_oncoming_lanes": true,
+        "steering_preset_used": [
+          "Высокая"
+        ],
+        "joystick_deadzone": 0.14,
+        "difficulty_boost_button_index": 2,
+        "difficulty_boost_stacks_per_run": true
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "5aced776-39f2-4c73-8d3c-548c1c2992ec",
+      "game_id": "neon_highway",
+      "game_title": "Neon Highway",
+      "started_at": "2026-10-16T16:23:39Z",
+      "ended_at": "2026-10-16T16:24:06Z",
+      "duration_seconds": 26.587,
+      "status": "completed",
+      "metrics": {
+        "runsPlayed": {
+          "label": "Игровые заезды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "runsCompleted": {
+          "label": "Завершённые заезды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "distanceKm": {
+          "label": "Общая дистанция",
+          "value": 0.252,
+          "unit": "км"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время за рулём",
+          "value": 6.756,
+          "unit": "сек."
+        },
+        "collisions": {
+          "label": "Столкновения",
+          "value": 3,
+          "unit": "шт."
+        },
+        "nearMisses": {
+          "label": "Опасные сближения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "overtakes": {
+          "label": "Обгоны",
+          "value": 1,
+          "unit": "шт."
+        },
+        "bonusPickups": {
+          "label": "Собранные бонусы",
+          "value": 0,
+          "unit": "шт."
+        },
+        "laneChanges": {
+          "label": "Смены полосы",
+          "value": 4,
+          "unit": "шт."
+        },
+        "difficultyBoosts": {
+          "label": "Уровни усложнения",
+          "value": 0,
+          "unit": "нажатий"
+        },
+        "maxTrafficIntensity": {
+          "label": "Максимальная интенсивность трафика",
+          "value": 1.0,
+          "unit": "x"
+        },
+        "averageSpeedKmh": {
+          "label": "Средняя скорость",
+          "value": 134.438,
+          "unit": "км/ч"
+        },
+        "maxSpeedKmh": {
+          "label": "Максимальная скорость",
+          "value": 136.864,
+          "unit": "км/ч"
+        },
+        "steeringPathPx": {
+          "label": "Траектория руления",
+          "value": 682.915,
+          "unit": "px"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Режимы чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "details": {
+        "rounds": [
+          {
+            "run_id": "a2215ca4-7fa9-43e6-a17f-3af93a9f7e29",
+            "run_number": 1,
+            "started_at": "2026-10-16T16:23:57Z",
+            "ended_at": "2026-10-16T16:24:04Z",
+            "status": "completed",
+            "completed": true,
+            "durationSeconds": 6.756,
+            "score": 0,
+            "distanceMeters": 252.295,
+            "crashes": 3,
+            "nearMisses": 0,
+            "overtakes": 1,
+            "bonusPickups": 0,
+            "laneChanges": 4,
+            "difficultyBoosts": 0,
+            "maxTrafficIntensity": 1.0,
+            "steeringPathPx": 682.915,
+            "maxSpeedKmh": 136.864,
+            "averageSpeedKmh": 134.438,
+            "steeringPreset": "Средняя"
+          }
+        ]
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1280,
+          "height": 720
+        },
+        "lane_count": 4,
+        "same_direction_lanes": [
+          3,
+          4
+        ],
+        "oncoming_lanes": [
+          1,
+          2
+        ],
+        "player_can_enter_oncoming_lanes": true,
+        "steering_preset_used": [
+          "Средняя"
+        ],
+        "joystick_deadzone": 0.14,
+        "difficulty_boost_button_index": 2,
+        "difficulty_boost_stacks_per_run": true
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "37a51605-6ec9-4147-844d-d69c5cace7cf",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T16:32:23Z",
+      "ended_at": "2026-10-16T16:32:49Z",
+      "duration_seconds": 26.544,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 20.046,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 1607.691,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 80.2,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 109.057,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 5.855,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "92c61ef9-2085-4d62-be6d-725f2d624b81",
+            "drawing": "Квадрат",
+            "difficulty": "Легкий",
+            "outcome": "interrupted",
+            "duration_seconds": 20.046,
+            "trail_length_px": 1607.691,
+            "ideal_path_length_px": 3080.0,
+            "mean_deviation_from_path_px": 109.057,
+            "average_cursor_speed_px_per_second": 80.199,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 5.855,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 1305,
+            "target_path_points_count": 97
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "a5bb6319-f97c-410b-a5de-340f0df1ea93",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T16:32:55Z",
+      "ended_at": "2026-10-16T16:33:05Z",
+      "duration_seconds": 9.982,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 4.007,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 0.0,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "ce410d1e-3f06-47b7-aaa0-e7399747f95e",
+            "drawing": "Квадрат",
+            "difficulty": "Легкий",
+            "outcome": "interrupted",
+            "duration_seconds": 4.007,
+            "trail_length_px": 0.0,
+            "ideal_path_length_px": 3080.0,
+            "mean_deviation_from_path_px": 0.0,
+            "average_cursor_speed_px_per_second": 0.0,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 0.0,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 1,
+            "target_path_points_count": 97
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "d5373718-e13c-4081-aa61-ab707c4bbcf0",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T16:33:56Z",
+      "ended_at": "2026-10-16T16:34:07Z",
+      "duration_seconds": 11.342,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 6.013,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 506.624,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 84.255,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 143.053,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 2.695,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "db2cd513-fdbd-4c4d-a310-753f91c83275",
+            "drawing": "Квадрат",
+            "difficulty": "Легкий",
+            "outcome": "interrupted",
+            "duration_seconds": 6.013,
+            "trail_length_px": 506.624,
+            "ideal_path_length_px": 3080.0,
+            "mean_deviation_from_path_px": 143.053,
+            "average_cursor_speed_px_per_second": 84.255,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 2.695,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 332,
+            "target_path_points_count": 97
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "be016dd9-49c7-4acc-9d4d-e2c04f05c330",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T16:34:20Z",
+      "ended_at": "2026-10-16T16:34:42Z",
+      "duration_seconds": 21.827,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 16.026,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 1555.35,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 97.052,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 199.669,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 2.345,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "df05b5c9-6363-4b19-a0a2-798f9b87757a",
+            "drawing": "Квадрат",
+            "difficulty": "Легкий",
+            "outcome": "interrupted",
+            "duration_seconds": 16.026,
+            "trail_length_px": 1555.35,
+            "ideal_path_length_px": 3080.0,
+            "mean_deviation_from_path_px": 199.669,
+            "average_cursor_speed_px_per_second": 97.051,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 2.345,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 823,
+            "target_path_points_count": 97
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "01dee447-2b06-4c2e-ac8d-d051fec2e343",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T16:34:43Z",
+      "ended_at": "2026-10-16T16:35:34Z",
+      "duration_seconds": 51.599,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 46.099,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 2363.969,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 51.28,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 18.25,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 2.509,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "68cd9d57-377d-4d7b-8dcc-ed1fbe58a896",
+            "drawing": "Квадрат",
+            "difficulty": "Легкий",
+            "outcome": "interrupted",
+            "duration_seconds": 46.099,
+            "trail_length_px": 2363.969,
+            "ideal_path_length_px": 3080.0,
+            "mean_deviation_from_path_px": 18.25,
+            "average_cursor_speed_px_per_second": 51.28,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 2.509,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 1865,
+            "target_path_points_count": 97
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "d9ad9493-4a47-4bdc-a1b9-a8ff6c2dfa26",
+      "game_id": "maze",
+      "game_title": "Cyber Maze",
+      "started_at": "2026-10-16T17:02:37Z",
+      "ended_at": "2026-10-16T17:02:39Z",
+      "duration_seconds": 1.616,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Попытки прохождения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Успешные прохождения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "wallCollisionCount": {
+          "label": "Столкновения со стенами",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 0,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToShortestRoutePx": {
+          "label": "Среднее расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToShortestRoutePx": {
+          "label": "Максимальное расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 700
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "difficulty_levels_used": [],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "route_deviation_method": "minimum Euclidean distance to any segment of the BFS shortest route"
+      },
+      "details": {
+        "rounds": []
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "bba15930-6ac2-4e84-b3d8-54ff36dfb13e",
+      "game_id": "minefield",
+      "game_title": "Cyber Minefield",
+      "started_at": "2026-10-16T17:06:10Z",
+      "ended_at": "2026-10-16T17:06:15Z",
+      "duration_seconds": 4.318,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsResolved": {
+          "label": "Завершённые попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsWon": {
+          "label": "Успешно пройденные поля",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsFailed": {
+          "label": "Неудачные попытки (мина)",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "totalMineHits": {
+          "label": "Попадания на мину",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 1.978,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToPathCenterlinePx": {
+          "label": "Среднее расстояние до центральной линии пути",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToPathCenterlinePx": {
+          "label": "Максимальное расстояние до центральной линии пути",
+          "value": 0.0,
+          "unit": "px"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 620,
+          "height": 730
+        },
+        "grid_size_cells": 10,
+        "cell_size_px": 62,
+        "initial_path_reveal_seconds": 5.0,
+        "hint_display_seconds": 2.0,
+        "movement_active_threshold_px_per_second": 5.0,
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "path_deviation_method": "minimum Euclidean distance to any segment of the generated route centerline"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "07158cee-253e-4e5e-a662-8def2d40441d",
+            "outcome": "interrupted",
+            "terminal": false,
+            "won": false,
+            "duration_seconds": 1.9779961309995997,
+            "collision_count": 0,
+            "hint_count": 0,
+            "path_length_px": 0.0,
+            "speed_sum_px_per_second": 0.0,
+            "speed_squared_sum": 0.0,
+            "speed_samples": 123,
+            "max_speed_px_per_second": 0.0,
+            "movement_active_seconds": 0.0,
+            "active_movement_distance_px": 0.0,
+            "deviation_sum_px": 0.0,
+            "deviation_samples": 123,
+            "max_path_deviation_px": 0.0,
+            "first_movement_latency_seconds": null,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "a33158b4-3b88-431a-910d-d84a696baf67",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T17:13:41Z",
+      "ended_at": "2026-10-16T17:13:45Z",
+      "duration_seconds": 4.433,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 0,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 2.888,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "a7029209-690f-404a-b2d6-19d25d901f84",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T17:13:46Z",
+      "ended_at": "2026-10-16T17:13:56Z",
+      "duration_seconds": 9.667,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 0,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 7.522,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "938d28f6-2757-403b-b308-929427be15eb",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T17:16:13Z",
+      "ended_at": "2026-10-16T17:16:22Z",
+      "duration_seconds": 8.968,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 0,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 6.846,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "658529b5-fe43-45ce-9ce3-d7eb2e4e18ed",
+      "game_id": "maze",
+      "game_title": "Cyber Maze",
+      "started_at": "2026-10-16T17:20:15Z",
+      "ended_at": "2026-10-16T17:20:26Z",
+      "duration_seconds": 10.311,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Попытки прохождения",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Успешные прохождения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "wallCollisionCount": {
+          "label": "Столкновения со стенами",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 7.371,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToShortestRoutePx": {
+          "label": "Среднее расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToShortestRoutePx": {
+          "label": "Максимальное расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "completionRatePct": {
+          "label": "Доля успешных прохождений от всех попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 700
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "difficulty_levels_used": [
+          "Легкий"
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "route_deviation_method": "minimum Euclidean distance to any segment of the BFS shortest route"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "20514af5-8b42-410f-a0d0-a42eb6f8eb7e",
+            "outcome": "interrupted",
+            "completed": false,
+            "duration_seconds": 7.371246686998347,
+            "difficulty": "Легкий",
+            "wall_collisions": 0,
+            "hint_count": 0,
+            "path_length_px": 0.0,
+            "speed_sum_px_per_second": 0.0,
+            "speed_squared_sum": 0.0,
+            "speed_samples": 454,
+            "max_speed_px_per_second": 0.0,
+            "movement_active_seconds": 0.0,
+            "active_movement_distance_px": 0.0,
+            "deviation_sum_px": 0.0,
+            "deviation_samples": 454,
+            "max_deviation_px": 0.0,
+            "first_movement_latency_seconds": null,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "b6c7877b-9be8-4447-950d-020f1d0be118",
+      "game_id": "platformer",
+      "game_title": "Elemental Run",
+      "started_at": "2026-10-16T17:22:30Z",
+      "ended_at": "2026-10-16T17:22:34Z",
+      "duration_seconds": 3.606,
+      "status": "interrupted",
+      "metrics": {
+        "levelAttempts": {
+          "label": "Попытки прохождения уровня",
+          "value": 1,
+          "unit": "шт."
+        },
+        "levelsCompleted": {
+          "label": "Успешно пройденные уровни",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "deaths": {
+          "label": "Смерти персонажей",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runesCollected": {
+          "label": "Собранные руны",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runeCollectionRatePct": {
+          "label": "Доля собранных рун",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 1.236,
+          "unit": "сек."
+        },
+        "firePathLengthPx": {
+          "label": "Траектория персонажа Огня",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "waterPathLengthPx": {
+          "label": "Траектория персонажа Воды",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "fireMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Огня",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "waterMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Воды",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "levelCompletionRatePct": {
+          "label": "Доля успешных попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "movement_model": "two character platformer; speeds and distances measured in game-world pixels",
+        "levels_used": [
+          "ИСКРА"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "level_index": 0,
+            "level_name": "ИСКРА",
+            "difficulty": 1,
+            "outcome": "interrupted",
+            "duration_seconds": 1.236,
+            "deaths": 0,
+            "runes_collected": 0,
+            "runes_available": 10,
+            "fire_path_length_px": 0.0,
+            "water_path_length_px": 0.0,
+            "fire_max_speed_px_per_second": 0.0,
+            "water_max_speed_px_per_second": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "5467ad70-81ce-430f-9bc1-ff1431155de2",
+      "game_id": "platformer",
+      "game_title": "Elemental Run",
+      "started_at": "2026-10-16T17:22:35Z",
+      "ended_at": "2026-10-16T17:22:47Z",
+      "duration_seconds": 11.892,
+      "status": "interrupted",
+      "metrics": {
+        "levelAttempts": {
+          "label": "Попытки прохождения уровня",
+          "value": 1,
+          "unit": "шт."
+        },
+        "levelsCompleted": {
+          "label": "Успешно пройденные уровни",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "deaths": {
+          "label": "Смерти персонажей",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runesCollected": {
+          "label": "Собранные руны",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runeCollectionRatePct": {
+          "label": "Доля собранных рун",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 9.541,
+          "unit": "сек."
+        },
+        "firePathLengthPx": {
+          "label": "Траектория персонажа Огня",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "waterPathLengthPx": {
+          "label": "Траектория персонажа Воды",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "fireMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Огня",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "waterMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Воды",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "levelCompletionRatePct": {
+          "label": "Доля успешных попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "movement_model": "two character platformer; speeds and distances measured in game-world pixels",
+        "levels_used": [
+          "ПЕРЕЛОМ"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "level_index": 1,
+            "level_name": "ПЕРЕЛОМ",
+            "difficulty": 2,
+            "outcome": "interrupted",
+            "duration_seconds": 9.541,
+            "deaths": 0,
+            "runes_collected": 0,
+            "runes_available": 10,
+            "fire_path_length_px": 0.0,
+            "water_path_length_px": 0.0,
+            "fire_max_speed_px_per_second": 0.0,
+            "water_max_speed_px_per_second": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "8a970485-28c8-4524-8f65-f0894369e484",
+      "game_id": "platformer",
+      "game_title": "Elemental Run",
+      "started_at": "2026-10-16T17:24:03Z",
+      "ended_at": "2026-10-16T17:24:06Z",
+      "duration_seconds": 3.828,
+      "status": "interrupted",
+      "metrics": {
+        "levelAttempts": {
+          "label": "Попытки прохождения уровня",
+          "value": 1,
+          "unit": "шт."
+        },
+        "levelsCompleted": {
+          "label": "Успешно пройденные уровни",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "deaths": {
+          "label": "Смерти персонажей",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runesCollected": {
+          "label": "Собранные руны",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runeCollectionRatePct": {
+          "label": "Доля собранных рун",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 1.313,
+          "unit": "сек."
+        },
+        "firePathLengthPx": {
+          "label": "Траектория персонажа Огня",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "waterPathLengthPx": {
+          "label": "Траектория персонажа Воды",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "fireMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Огня",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "waterMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Воды",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "levelCompletionRatePct": {
+          "label": "Доля успешных попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "movement_model": "two character platformer; speeds and distances measured in game-world pixels",
+        "levels_used": [
+          "ИСКРА"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "level_index": 0,
+            "level_name": "ИСКРА",
+            "difficulty": 1,
+            "outcome": "interrupted",
+            "duration_seconds": 1.313,
+            "deaths": 0,
+            "runes_collected": 0,
+            "runes_available": 10,
+            "fire_path_length_px": 0.0,
+            "water_path_length_px": 0.0,
+            "fire_max_speed_px_per_second": 0.0,
+            "water_max_speed_px_per_second": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "c730bd0d-638d-49c9-9f14-c38457828c86",
+      "game_id": "neon_highway",
+      "game_title": "Neon Highway",
+      "started_at": "2026-10-16T17:25:16Z",
+      "ended_at": "2026-10-16T17:25:53Z",
+      "duration_seconds": 36.99,
+      "status": "completed",
+      "metrics": {
+        "runsPlayed": {
+          "label": "Игровые заезды",
+          "value": 2,
+          "unit": "шт."
+        },
+        "runsCompleted": {
+          "label": "Завершённые заезды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 660,
+          "unit": "очков"
+        },
+        "distanceKm": {
+          "label": "Общая дистанция",
+          "value": 1.317,
+          "unit": "км"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время за рулём",
+          "value": 33.9,
+          "unit": "сек."
+        },
+        "collisions": {
+          "label": "Столкновения",
+          "value": 3,
+          "unit": "шт."
+        },
+        "nearMisses": {
+          "label": "Опасные сближения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "overtakes": {
+          "label": "Обгоны",
+          "value": 14,
+          "unit": "шт."
+        },
+        "bonusPickups": {
+          "label": "Собранные бонусы",
+          "value": 1,
+          "unit": "шт."
+        },
+        "laneChanges": {
+          "label": "Смены полосы",
+          "value": 1,
+          "unit": "шт."
+        },
+        "difficultyBoosts": {
+          "label": "Уровни усложнения",
+          "value": 0,
+          "unit": "нажатий"
+        },
+        "maxTrafficIntensity": {
+          "label": "Максимальная интенсивность трафика",
+          "value": 1.0,
+          "unit": "x"
+        },
+        "averageSpeedKmh": {
+          "label": "Средняя скорость",
+          "value": 139.844,
+          "unit": "км/ч"
+        },
+        "maxSpeedKmh": {
+          "label": "Максимальная скорость",
+          "value": 150.714,
+          "unit": "км/ч"
+        },
+        "steeringPathPx": {
+          "label": "Траектория руления",
+          "value": 105.12,
+          "unit": "px"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Режимы чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "details": {
+        "rounds": [
+          {
+            "run_id": "bd93f397-f5cd-42f7-bf3f-88807bf8fae6",
+            "run_number": 1,
+            "started_at": "2026-10-16T17:25:18Z",
+            "ended_at": "2026-10-16T17:25:26Z",
+            "status": "completed",
+            "completed": true,
+            "durationSeconds": 7.908,
+            "score": 0,
+            "distanceMeters": 296.226,
+            "crashes": 3,
+            "nearMisses": 0,
+            "overtakes": 2,
+            "bonusPickups": 1,
+            "laneChanges": 0,
+            "difficultyBoosts": 0,
+            "maxTrafficIntensity": 1.0,
+            "steeringPathPx": 0.0,
+            "maxSpeedKmh": 137.694,
+            "averageSpeedKmh": 134.853,
+            "steeringPreset": "Средняя"
+          },
+          {
+            "run_id": "d52f8888-e8b7-409f-8cd1-a3d71e122923",
+            "run_number": 2,
+            "started_at": "2026-10-16T17:25:27Z",
+            "ended_at": "2026-10-16T17:25:53Z",
+            "status": "interrupted",
+            "completed": false,
+            "durationSeconds": 25.992,
+            "score": 660,
+            "distanceMeters": 1020.64,
+            "crashes": 0,
+            "nearMisses": 0,
+            "overtakes": 12,
+            "bonusPickups": 0,
+            "laneChanges": 1,
+            "difficultyBoosts": 0,
+            "maxTrafficIntensity": 1.0,
+            "steeringPathPx": 105.12,
+            "maxSpeedKmh": 150.714,
+            "averageSpeedKmh": 141.363,
+            "steeringPreset": "Средняя"
+          }
+        ]
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1280,
+          "height": 720
+        },
+        "lane_count": 4,
+        "same_direction_lanes": [
+          3,
+          4
+        ],
+        "oncoming_lanes": [
+          1,
+          2
+        ],
+        "player_can_enter_oncoming_lanes": true,
+        "steering_preset_used": [
+          "Средняя"
+        ],
+        "joystick_deadzone": 0.14,
+        "difficulty_boost_button_index": 2,
+        "difficulty_boost_stacks_per_run": true
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "db642d7a-1e4b-4f8f-9abc-7b61e9e1fb59",
+      "game_id": "minefield",
+      "game_title": "Cyber Minefield",
+      "started_at": "2026-10-16T17:27:27Z",
+      "ended_at": "2026-10-16T17:27:35Z",
+      "duration_seconds": 7.851,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsResolved": {
+          "label": "Завершённые попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsWon": {
+          "label": "Успешно пройденные поля",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsFailed": {
+          "label": "Неудачные попытки (мина)",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "totalMineHits": {
+          "label": "Попадания на мину",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 6.204,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToPathCenterlinePx": {
+          "label": "Среднее расстояние до центральной линии пути",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToPathCenterlinePx": {
+          "label": "Максимальное расстояние до центральной линии пути",
+          "value": 0.0,
+          "unit": "px"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 620,
+          "height": 730
+        },
+        "grid_size_cells": 10,
+        "cell_size_px": 62,
+        "initial_path_reveal_seconds": 5.0,
+        "hint_display_seconds": 2.0,
+        "movement_active_threshold_px_per_second": 5.0,
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "path_deviation_method": "minimum Euclidean distance to any segment of the generated route centerline"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "0af5fb73-270a-4b18-b8a0-2b495a8ff856",
+            "outcome": "interrupted",
+            "terminal": false,
+            "won": false,
+            "duration_seconds": 6.203604553000332,
+            "collision_count": 0,
+            "hint_count": 0,
+            "path_length_px": 0.0,
+            "speed_sum_px_per_second": 0.0,
+            "speed_squared_sum": 0.0,
+            "speed_samples": 381,
+            "max_speed_px_per_second": 0.0,
+            "movement_active_seconds": 0.0,
+            "active_movement_distance_px": 0.0,
+            "deviation_sum_px": 0.0,
+            "deviation_samples": 381,
+            "max_path_deviation_px": 0.0,
+            "first_movement_latency_seconds": null,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "868311cd-ec30-4e9c-8df5-f4832d32eb4b",
+      "game_id": "drawing",
+      "game_title": "Cyber Tilt Trace",
+      "started_at": "2026-10-16T17:31:01Z",
+      "ended_at": "2026-10-16T17:31:15Z",
+      "duration_seconds": 14.402,
+      "status": "interrupted",
+      "metrics": {
+        "drawingAttempts": {
+          "label": "Попытки рисования",
+          "value": 1,
+          "unit": "шт."
+        },
+        "drawingsCompleted": {
+          "label": "Успешно выполненные задания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "drawingAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время заданий",
+          "value": 6.015,
+          "unit": "сек."
+        },
+        "trailLengthPx": {
+          "label": "Суммарная длина траектории",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время заданий",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDeviationFromPathPx": {
+          "label": "Среднее отклонение от контура",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageControlSignalVariabilityIndex": {
+          "label": "Средний индекс изменения сигнала управления (условная шкала 0–100)",
+          "value": 0.0,
+          "unit": "баллов из 100"
+        },
+        "averageTrajectoryEfficiencyPct": {
+          "label": "Средняя эффективность траектории",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "drawingCompletionRatePct": {
+          "label": "Доля выполненных заданий",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 1920,
+          "height": 1080
+        },
+        "input_filter_strength": 0.12,
+        "input_sampling_rate_hz_target": 120,
+        "path_deviation_method": "mean distance from sampled trace points to nearest sampled target-path point",
+        "signal_variability_is_diagnostic": false,
+        "signal_variability_scale": "0-100 normalized index; not a percentage of accuracy and not a physiological tremor measurement",
+        "single_frame_delta_rejection_threshold": 0.18
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "7b15177d-a944-436b-89eb-4c9fd3098f6e",
+            "drawing": "Звезда",
+            "difficulty": "Средний",
+            "outcome": "interrupted",
+            "duration_seconds": 6.015,
+            "trail_length_px": 0.0,
+            "ideal_path_length_px": 2921.62,
+            "mean_deviation_from_path_px": 0.0,
+            "average_cursor_speed_px_per_second": 0.0,
+            "trajectory_efficiency_pct": 0.0,
+            "control_signal_variability_index_0_100": 0.0,
+            "control_signal_variability_method": "mean smoothed change in normalized tilt-control signal after rejecting single-frame deltas above 0.18; not a physiological tremor measurement",
+            "trail_points_count": 1,
+            "target_path_points_count": 241
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "bebda638-feed-408d-a7d7-414acfb2ed80",
+      "game_id": "puzzle",
+      "game_title": "MoveUp Puzzle",
+      "started_at": "2026-10-16T17:33:36Z",
+      "ended_at": "2026-10-16T17:33:47Z",
+      "duration_seconds": 11.202,
+      "status": "interrupted",
+      "metrics": {
+        "puzzleAttempts": {
+          "label": "Попытки сборки пазла",
+          "value": 1,
+          "unit": "шт."
+        },
+        "puzzlesCompleted": {
+          "label": "Успешно собранные пазлы",
+          "value": 0,
+          "unit": "шт."
+        },
+        "puzzleAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "puzzleAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "piecesPlaced": {
+          "label": "Размещённые детали",
+          "value": 0,
+          "unit": "шт."
+        },
+        "placementAttempts": {
+          "label": "Попытки размещения деталей",
+          "value": 0,
+          "unit": "шт."
+        },
+        "placementErrors": {
+          "label": "Ошибочные размещения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "successfulPlacementRatePct": {
+          "label": "Успешные размещения от всех попыток",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "pieceCompletionRatePct": {
+          "label": "Доля размещённых деталей",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "totalScore": {
+          "label": "Суммарный игровой счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время сборки",
+          "value": 8.171,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время сборки",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость активного движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "puzzleCompletionRatePct": {
+          "label": "Доля завершённых пазлов",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "grid_sizes_used": [
+          3
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "8324515c-b841-406c-ad07-b0818ea4c9b3",
+            "picture": "Горное озеро",
+            "grid_size": 3,
+            "outcome": "interrupted",
+            "duration_seconds": 8.171,
+            "total_pieces": 9,
+            "pieces_placed": 0,
+            "placement_attempts": 0,
+            "placement_errors": 0,
+            "successfulPlacementRatePct": 0.0,
+            "score": 0,
+            "cursor_path_length_px": 0.0,
+            "average_cursor_speed_px_per_second": 0.0,
+            "average_active_movement_speed_px_per_second": 0.0,
+            "active_movement_distance_px": 0.0,
+            "active_movement_seconds": 0.0,
+            "max_cursor_speed_px_per_second": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "336d3547-bdc3-4ce2-872d-4377433d6caa",
+      "game_id": "puzzle",
+      "game_title": "MoveUp Puzzle",
+      "started_at": "2026-10-16T17:34:39Z",
+      "ended_at": "2026-10-16T17:34:42Z",
+      "duration_seconds": 3.587,
+      "status": "interrupted",
+      "metrics": {
+        "puzzleAttempts": {
+          "label": "Попытки сборки пазла",
+          "value": 0,
+          "unit": "шт."
+        },
+        "puzzlesCompleted": {
+          "label": "Успешно собранные пазлы",
+          "value": 0,
+          "unit": "шт."
+        },
+        "puzzleAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "puzzleAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "piecesPlaced": {
+          "label": "Размещённые детали",
+          "value": 0,
+          "unit": "шт."
+        },
+        "placementAttempts": {
+          "label": "Попытки размещения деталей",
+          "value": 0,
+          "unit": "шт."
+        },
+        "placementErrors": {
+          "label": "Ошибочные размещения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "successfulPlacementRatePct": {
+          "label": "Успешные размещения от всех попыток",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "pieceCompletionRatePct": {
+          "label": "Доля размещённых деталей",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "totalScore": {
+          "label": "Суммарный игровой счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время сборки",
+          "value": 0,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время сборки",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость активного движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "grid_sizes_used": [],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ]
+      },
+      "details": {
+        "rounds": []
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "d025576b-19b0-4904-ba60-65d06317f25b",
+      "game_id": "maze",
+      "game_title": "Maze",
+      "started_at": "2026-10-16T17:45:07Z",
+      "ended_at": "2026-10-16T17:45:11Z",
+      "duration_seconds": 3.22,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Попытки прохождения",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Успешные прохождения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "wallCollisionCount": {
+          "label": "Столкновения со стенами",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 1.616,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToShortestRoutePx": {
+          "label": "Среднее расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToShortestRoutePx": {
+          "label": "Максимальное расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "completionRatePct": {
+          "label": "Доля успешных прохождений от всех попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 700
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "difficulty_levels_used": [
+          "Средний"
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "route_deviation_method": "minimum Euclidean distance to any segment of the BFS shortest route"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "2061d59c-4984-4bc5-885d-9a4c5243f376",
+            "outcome": "interrupted",
+            "completed": false,
+            "duration_seconds": 1.6160605679997389,
+            "difficulty": "Средний",
+            "wall_collisions": 0,
+            "hint_count": 0,
+            "path_length_px": 0.0,
+            "speed_sum_px_per_second": 0.0,
+            "speed_squared_sum": 0.0,
+            "speed_samples": 101,
+            "max_speed_px_per_second": 0.0,
+            "movement_active_seconds": 0.0,
+            "active_movement_distance_px": 0.0,
+            "deviation_sum_px": 0.0,
+            "deviation_samples": 101,
+            "max_deviation_px": 0.0,
+            "first_movement_latency_seconds": null,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
