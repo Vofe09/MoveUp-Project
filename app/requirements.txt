@@ -1,0 +1,9 @@
+numpy==2.5.4
+pygame==2.6.1
+PyOpenGL==3.1.10
+pyserial==3.5
+pyside6==6.12.0
+pyside6_addons==6.12.0
+pyside6_essentials==6.12.0
+pyside6_pdf==6.12.0.140
+pyside6_webengine==6.12.0.140

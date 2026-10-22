@@ -3,11 +3,18 @@ import pygame
 from pygame.locals import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
-import serial
 import math
 import random
 import time
-from serial.tools import list_ports
+
+# Serial support is optional: the game now reads the controller over USB HID.
+# These imports only support the legacy COM-port helper functions retained below.
+try:
+    import serial
+    from serial.tools import list_ports
+except ImportError:
+    serial = None
+    list_ports = None
 
 # =========================
 # Настройки и конфигурация
@@ -42,7 +49,22 @@ def load_config():
 
 config = load_config()
 
-ser = None
+# USB HID axes used by the updated MoveUp firmware.
+# These indices and directions match the working Drawing.py mapping:
+# Ry increases when tilting away and decreases when tilting toward the user.
+# Rz increases when tilting left and decreases when tilting right.
+ControllerRyAxis = 4
+ControllerRzAxis = 5
+ControllerTiltRangeDegrees = 45.0  # Firmware maps a +/-45-degree tilt to the HID axis range.
+ControllerPitchSign = -1.0
+ControllerRollSign = 1.0
+
+# Task-specific travel sensitivity. Movement along world Z is visually less
+# obvious in the table camera and the mirror's usable Z span is narrower.
+TableWipeDepthSensitivity = 0.05
+MirrorWipeHorizontalSensitivity = 0.05
+
+ser = None  # Retained only for the legacy serial helper functions below.
 calibrated_offset_pitch = 0.0
 calibrated_offset_roll = 0.0
 
@@ -458,6 +480,134 @@ def draw_chair(x, y, z, rot_y, tex_wood):
 
 
 # =========================
+# Выбор USB HID-контроллера MoveUp
+# =========================
+
+def RunControllerMenu():
+    pygame.init()
+    pygame.joystick.init()
+
+    Width = 900
+    Height = 600
+    Screen = pygame.display.set_mode((Width, Height))
+    pygame.display.set_caption("MoveUp — выбор контроллера")
+
+    BigFont = pygame.font.SysFont("Arial", 38, bold=True)
+    Font = pygame.font.SysFont("Arial", 24)
+    SmallFont = pygame.font.SysFont("Arial", 18)
+    Clock = pygame.time.Clock()
+    Selected = 0
+    StatusMessage = "Выберите MoveUp Gamepad и нажмите Enter."
+    StatusColor = (180, 190, 205)
+    OpenDevices = []
+
+    def CloseOpenDevices():
+        """Закрывает только созданные объекты джойстиков, не перезапуская подсистему."""
+        for DeviceIndex, Device in OpenDevices:
+            try:
+                if Device.get_init():
+                    Device.quit()
+            except pygame.error:
+                pass
+
+    def RefreshOpenDevices():
+        """Обновляет список устройств, не вызывая joystick.quit()/init()."""
+        nonlocal OpenDevices, Selected
+        CloseOpenDevices()
+        OpenDevices = []
+
+        for DeviceIndex in range(pygame.joystick.get_count()):
+            try:
+                Device = pygame.joystick.Joystick(DeviceIndex)
+                Device.init()
+                OpenDevices.append((DeviceIndex, Device))
+            except pygame.error as Error:
+                print(f"Не удалось открыть HID-устройство {DeviceIndex}: {Error}")
+
+        if OpenDevices:
+            Selected %= len(OpenDevices)
+        else:
+            Selected = 0
+
+    RefreshOpenDevices()
+
+    while True:
+        DeviceCount = len(OpenDevices)
+        if DeviceCount:
+            Selected %= DeviceCount
+        else:
+            Selected = 0
+
+        for Event in pygame.event.get():
+            if Event.type == pygame.QUIT:
+                CloseOpenDevices()
+                return None
+
+            # Важно: не перезапускаем pygame.joystick при горячем подключении.
+            # Такой перезапуск во время обработки событий может повредить внутреннее
+            # сопоставление устройств Pygame и вызвать KeyError внутри event.get().
+            if Event.type in (pygame.JOYDEVICEADDED, pygame.JOYDEVICEREMOVED):
+                RefreshOpenDevices()
+                DeviceCount = len(OpenDevices)
+                continue
+
+            if Event.type == pygame.KEYDOWN:
+                if Event.key == pygame.K_ESCAPE:
+                    CloseOpenDevices()
+                    return None
+                elif Event.key == pygame.K_UP and DeviceCount:
+                    Selected = (Selected - 1) % DeviceCount
+                elif Event.key == pygame.K_DOWN and DeviceCount:
+                    Selected = (Selected + 1) % DeviceCount
+                elif Event.key in (pygame.K_RETURN, pygame.K_KP_ENTER) and DeviceCount:
+                    DeviceIndex, Candidate = OpenDevices[Selected]
+                    AxisCount = Candidate.get_numaxes()
+                    if AxisCount < 6:
+                        StatusMessage = (
+                            f"У устройства только {AxisCount} осей. Нужны как минимум 6 осей "
+                            "(Ry — ось 4, Rz — ось 5)."
+                        )
+                        StatusColor = (255, 150, 120)
+                    else:
+                        CloseOpenDevices()
+                        return DeviceIndex
+
+        DeviceCount = len(OpenDevices)
+        Screen.fill((18, 25, 35))
+        Screen.blit(BigFont.render("ПОДКЛЮЧЕНИЕ MOVEUP", True, (245, 248, 255)), (50, 42))
+        Screen.blit(
+            Font.render("Стрелки ↑/↓ — выбор    Enter — подтвердить    Esc — выход", True, (180, 190, 205)),
+            (52, 100),
+        )
+
+        if DeviceCount == 0:
+            Screen.blit(Font.render("HID-контроллеры не найдены", True, (255, 130, 130)), (60, 190))
+            Screen.blit(
+                SmallFont.render(
+                    "Подключите Pico по USB и проверьте, что прошивка загружена.",
+                    True,
+                    (180, 190, 205),
+                ),
+                (60, 235),
+            )
+        else:
+            for MenuIndex, (DeviceIndex, Candidate) in enumerate(OpenDevices):
+                DeviceName = Candidate.get_name()
+                AxisCount = Candidate.get_numaxes()
+                DeviceRect = pygame.Rect(55, 165 + MenuIndex * 62, 790, 50)
+                IsSelected = MenuIndex == Selected
+                BackgroundColor = (0, 105, 165) if IsSelected else (42, 53, 70)
+                pygame.draw.rect(Screen, BackgroundColor, DeviceRect, border_radius=8)
+                LabelColor = (255, 255, 255) if IsSelected else (205, 213, 225)
+                Label = f"[{DeviceIndex}] {DeviceName}    —    осей: {AxisCount}"
+                Screen.blit(Font.render(Label, True, LabelColor), (DeviceRect.x + 16, DeviceRect.y + 11))
+
+        Screen.blit(SmallFont.render(StatusMessage, True, StatusColor), (55, Height - 55))
+        pygame.display.flip()
+        Clock.tick(60)
+
+
+# =========================
 # Основной игровой класс
 # =========================
 
@@ -466,8 +616,9 @@ class AdvancedRehabGame:
 # Создание окна и игрового состояния
 # =========================
 
-    def __init__(self):
+    def __init__(self, Controller):
         pygame.init()
+        self.controller = Controller
         self.w, self.h = config["window"]["width"], config["window"]["height"]
         self.screen = pygame.display.set_mode((self.w, self.h), DOUBLEBUF | OPENGL)
         pygame.display.set_caption(config["window"]["title"])
@@ -832,25 +983,44 @@ class AdvancedRehabGame:
 # =========================
 
     def update_sensor_data(self):
-        if ser:
-            try:
-                print("waiting:", ser.in_waiting)
+        """Read the updated Pico USB HID axes and convert them to game angles."""
+        if self.controller is None:
+            return
 
-                if ser.in_waiting > 0:
-                    line = ser.readline().decode("utf-8", errors="ignore").strip()
-                    print("LINE:", line)
-            except Exception as e:
-                print(e)
+        try:
+            pygame.event.pump()
+            if not self.controller.get_init():
+                self.controller.init()
 
-            else:
-                # Без подключенного датчика управление не подменяется симуляцией.
-                # Оставляем предыдущее положение, чтобы не ломать реальное управление.
+            if self.controller.get_numaxes() <= max(ControllerRyAxis, ControllerRzAxis):
                 return
 
-            alpha = 0.20
+            # Preserve the previous frame so gesture-based tasks can detect movement.
+            self.prev_pitch = self.pitch
+            self.prev_roll = self.roll
 
+            RyValue = max(-1.0, min(1.0, float(self.controller.get_axis(ControllerRyAxis))))
+            RzValue = max(-1.0, min(1.0, float(self.controller.get_axis(ControllerRzAxis))))
+
+            # HID values are normalized to [-1, 1]; the firmware maps +/-45 degrees
+            # to that range. Keep the same signs and axis assignment as Drawing.py.
+            self.pitch = ControllerPitchSign * RyValue * ControllerTiltRangeDegrees
+            self.roll = ControllerRollSign * RzValue * ControllerTiltRangeDegrees
+
+            # Per-frame control-signal change used by the existing stability checks.
+            # This is a control variability value, not a medical tremor measurement.
+            self.tremor = math.hypot(
+                self.pitch - self.prev_pitch,
+                self.roll - self.prev_roll,
+            )
+
+            alpha = 0.20
             self.f_pitch += (self.pitch - self.f_pitch) * alpha
             self.f_roll += (self.roll - self.f_roll) * alpha
+
+        except pygame.error as Error:
+            print(f"Ошибка чтения HID-контроллера: {Error}")
+            self.controller = None
 
 
 # =========================
@@ -1031,8 +1201,15 @@ class AdvancedRehabGame:
 
                 elif self.state == 'WIPE_TASK':
                     task = self.kitchen_tasks[3]
+                    # Roll moves the sponge left/right across the table (world X).
                     self.sponge_x = min(max(-self.f_roll * 0.032, -1.3), 1.3)
-                    self.sponge_z = min(max(1.6 + (self.f_pitch * 0.020), 0.6), 2.6)
+                    # Pitch moves it toward/away across the table (world Z).
+                    # Use stronger travel so this depth movement is clearly visible
+                    # from the angled camera used for the tabletop.
+                    self.sponge_z = min(
+                        max(1.6 + (self.f_pitch * TableWipeDepthSensitivity), 0.6),
+                        2.6,
+                    )
                     for spot in self.dirt_spots:
                         if spot["cleaned"] < 1.0:
                             glEnable(GL_BLEND); glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
@@ -1071,7 +1248,14 @@ class AdvancedRehabGame:
 
                 elif self.state == 'MIRROR_TASK':
                     task = self.hallway_tasks[1]
-                    target_sponge_z = min(max(-1.0 + (self.f_roll * 0.025), -1.5), -0.5)
+                    # The mirror lies in the Y/Z plane: roll moves horizontally
+                    # along Z, while pitch moves vertically along Y. The usable
+                    # horizontal span is narrow, so increase roll travel to make
+                    # left/right movement as noticeable as vertical movement.
+                    target_sponge_z = min(
+                        max(-1.0 + (self.f_roll * MirrorWipeHorizontalSensitivity), -1.5),
+                        -0.5,
+                    )
                     target_sponge_y = min(max(2.2 + (self.f_pitch * 0.025), 1.2), 3.2)
                     for spot in self.mirror_spots:
                         if spot["cleaned"] < 1.0:
@@ -1174,25 +1358,31 @@ class AdvancedRehabGame:
             pygame.display.flip()
 
 if __name__ == "__main__":
+    ControllerIndex = RunControllerMenu()
 
-    Port = RunPortMenu()
-
-    if Port is None:
+    if ControllerIndex is None:
         pygame.quit()
         raise SystemExit
 
+    Controller = None
     try:
+        pygame.joystick.init()
+        Controller = pygame.joystick.Joystick(ControllerIndex)
+        Controller.init()
 
-        OpenSerial(Port)
+        if Controller.get_numaxes() < 6:
+            raise RuntimeError(
+                "У выбранного контроллера недостаточно HID-осей: "
+                "требуются Ry (индекс 4) и Rz (индекс 5)."
+            )
 
-        print(f"Подключено к {Port}")
+        print(f"Подключён HID-контроллер: {Controller.get_name()}")
+        AdvancedRehabGame(Controller).game_loop()
 
-    except Exception as Error:
-
-        print(Error)
-
+    finally:
+        if Controller is not None:
+            try:
+                Controller.quit()
+            except pygame.error:
+                pass
         pygame.quit()
-
-        raise SystemExit
-
-    AdvancedRehabGame().game_loop()

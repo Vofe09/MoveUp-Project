@@ -85,10 +85,14 @@ constexpr uint16_t HidMax = 1023;
 // ----------------------------------------------------------------------------
 // Gyroscope calibration / mapping
 // ----------------------------------------------------------------------------
-constexpr uint32_t OrientationCalibrationDurationMs = 10000;
+constexpr uint32_t OrientationCalibrationDurationMs = 3000;
 constexpr uint32_t OrientationCalibrationSampleIntervalMs = 5;
-constexpr float GyroSensitivityLsbPerDps = 131.0f;
-constexpr float ComplementaryFilterAlpha = 0.98f;
+constexpr float GyroSensitivityLsbPerDps = 131.0f; // MPU-6500, range +/-250 dps
+constexpr float AccelerometerCountsPerG = 16384.0f; // MPU-6500, range +/-2 g
+constexpr float OrientationCorrectionTimeConstantSeconds = 0.35f;
+constexpr float AccelerometerFullTrustErrorG = 0.08f;
+constexpr float AccelerometerNoTrustErrorG = 0.35f;
+constexpr float GyroRateDeadbandDps = 0.08f;
 constexpr float TiltDeadzoneDegrees = 1.5f;
 constexpr float TiltHalfRangeDegrees = 45.0f;
 
@@ -236,6 +240,7 @@ float filteredPitchDegrees = 0.0f;
 float zeroRollDegrees = 0.0f;
 float zeroPitchDegrees = 0.0f;
 uint32_t lastOrientationUpdateUs = 0;
+bool orientationFilterInitialized = false;
 
 int16_t joystickValues[4] = {
   JoystickDefaultCenter,
@@ -515,6 +520,8 @@ void CalibrateJoystickCenters() {
 }
 
 float CalculateRollDegrees(const MpuSample& sample) {
+  // Roll angle inferred from gravity. Gyroscope integration handles quick motion;
+  // accelerometer correction keeps the estimate from drifting over time.
   return atan2f((float)sample.accelY, (float)sample.accelZ) * 180.0f / PI;
 }
 
@@ -524,25 +531,58 @@ float CalculatePitchDegrees(const MpuSample& sample) {
   return atan2f(-(float)sample.accelX, accelYZ) * 180.0f / PI;
 }
 
+float WrapAngleDegrees(float angleDegrees) {
+  angleDegrees = fmodf(angleDegrees + 180.0f, 360.0f);
+  if (angleDegrees < 0.0f) {
+    angleDegrees += 360.0f;
+  }
+  return angleDegrees - 180.0f;
+}
+
+float CalculateAccelerometerMagnitudeG(const MpuSample& sample) {
+  float accelX = (float)sample.accelX;
+  float accelY = (float)sample.accelY;
+  float accelZ = (float)sample.accelZ;
+  return sqrtf(accelX * accelX + accelY * accelY + accelZ * accelZ) /
+         AccelerometerCountsPerG;
+}
+
+float CalculateAccelerometerConfidence(float magnitudeG) {
+  float magnitudeErrorG = fabsf(magnitudeG - 1.0f);
+
+  if (magnitudeErrorG <= AccelerometerFullTrustErrorG) {
+    return 1.0f;
+  }
+
+  if (magnitudeErrorG >= AccelerometerNoTrustErrorG) {
+    return 0.0f;
+  }
+
+  return 1.0f - (magnitudeErrorG - AccelerometerFullTrustErrorG) /
+                     (AccelerometerNoTrustErrorG - AccelerometerFullTrustErrorG);
+}
+
 void CalibrateGyro() {
   if (!mpuPresent) {
     return;
   }
 
-  // Keep the controller still and in the desired neutral position for 20 s.
+  // Keep the controller stationary and in its desired neutral position during
+  // this short startup calibration. Circular means avoid angle-wrap problems.
   int64_t gyroSums[3] = {0, 0, 0};
-  double rollSum = 0.0;
-  double pitchSum = 0.0;
+  double rollSinSum = 0.0;
+  double rollCosSum = 0.0;
+  double pitchSinSum = 0.0;
+  double pitchCosSum = 0.0;
   uint32_t validSamples = 0;
   uint32_t calibrationStartedMs = millis();
-  uint32_t lastSampleMs = 0;
+  uint32_t lastSampleMs = calibrationStartedMs - OrientationCalibrationSampleIntervalMs;
 
   while ((uint32_t)(millis() - calibrationStartedMs) <
          OrientationCalibrationDurationMs) {
     uint32_t nowMs = millis();
 
-    if ((uint32_t)(nowMs - lastSampleMs) >=
-        OrientationCalibrationSampleIntervalMs) {
+    if ((uint32_t)(nowMs - lastSampleMs) >= OrientationCalibrationSampleIntervalMs) {
       lastSampleMs = nowMs;
       MpuSample sample{};
 
@@ -550,8 +590,13 @@ void CalibrateGyro() {
         gyroSums[0] += sample.gyroX;
         gyroSums[1] += sample.gyroY;
         gyroSums[2] += sample.gyroZ;
-        rollSum += CalculateRollDegrees(sample);
-        pitchSum += CalculatePitchDegrees(sample);
+
+        float rollRadians = CalculateRollDegrees(sample) * PI / 180.0f;
+        float pitchRadians = CalculatePitchDegrees(sample) * PI / 180.0f;
+        rollSinSum += sinf(rollRadians);
+        rollCosSum += cosf(rollRadians);
+        pitchSinSum += sinf(pitchRadians);
+        pitchCosSum += cosf(pitchRadians);
         ++validSamples;
       }
     }
@@ -560,13 +605,15 @@ void CalibrateGyro() {
     delay(1);
   }
 
-  if (validSamples > 0) {
+  if (validSamples >= 20) {
     for (uint8_t axis = 0; axis < 3; ++axis) {
       gyroCenters[axis] = (int32_t)(gyroSums[axis] / (int64_t)validSamples);
     }
-    zeroRollDegrees = (float)(rollSum / validSamples);
-    zeroPitchDegrees = (float)(pitchSum / validSamples);
+
+    zeroRollDegrees = atan2f((float)rollSinSum, (float)rollCosSum) * 180.0f / PI;
+    zeroPitchDegrees = atan2f((float)pitchSinSum, (float)pitchCosSum) * 180.0f / PI;
   } else {
+    // Too few valid I2C samples: start from a safe zero calibration.
     gyroCenters[0] = gyroCenters[1] = gyroCenters[2] = 0;
     zeroRollDegrees = 0.0f;
     zeroPitchDegrees = 0.0f;
@@ -575,32 +622,67 @@ void CalibrateGyro() {
   filteredRollDegrees = 0.0f;
   filteredPitchDegrees = 0.0f;
   lastOrientationUpdateUs = micros();
+  orientationFilterInitialized = true;
 }
 
 void UpdateOrientation(const MpuSample& sample) {
   uint32_t nowUs = micros();
-  float deltaTime = (uint32_t)(nowUs - lastOrientationUpdateUs) / 1000000.0f;
+  uint32_t elapsedUs = nowUs - lastOrientationUpdateUs;
   lastOrientationUpdateUs = nowUs;
 
-  if (deltaTime <= 0.0f || deltaTime > 0.1f) {
+  float deltaTime = (float)elapsedUs / 1000000.0f;
+  if (deltaTime <= 0.0f || deltaTime > 0.05f) {
+    // Don't integrate a large jump after a delayed or missed sensor read.
     deltaTime = 0.005f;
   }
 
-  float gyroRollRate = ((float)sample.gyroX - gyroCenters[0]) /
-                       GyroSensitivityLsbPerDps;
-  float gyroPitchRate = ((float)sample.gyroY - gyroCenters[1]) /
-                        GyroSensitivityLsbPerDps;
+  if (!orientationFilterInitialized) {
+    filteredRollDegrees = 0.0f;
+    filteredPitchDegrees = 0.0f;
+    orientationFilterInitialized = true;
+  }
 
-  float gyroRoll = filteredRollDegrees + gyroRollRate * deltaTime;
-  float gyroPitch = filteredPitchDegrees + gyroPitchRate * deltaTime;
+  // Gyroscope reports angular velocity, so integrate it using the actual sample
+  // interval. Subtract the measured stationary bias from each sensor axis.
+  float gyroRollRateDps = ((float)sample.gyroX - gyroCenters[0]) /
+                          GyroSensitivityLsbPerDps;
+  float gyroPitchRateDps = ((float)sample.gyroY - gyroCenters[1]) /
+                           GyroSensitivityLsbPerDps;
 
-  float accelRoll = CalculateRollDegrees(sample) - zeroRollDegrees;
-  float accelPitch = CalculatePitchDegrees(sample) - zeroPitchDegrees;
+  if (fabsf(gyroRollRateDps) < GyroRateDeadbandDps) {
+    gyroRollRateDps = 0.0f;
+  }
+  if (fabsf(gyroPitchRateDps) < GyroRateDeadbandDps) {
+    gyroPitchRateDps = 0.0f;
+  }
 
-  filteredRollDegrees = ComplementaryFilterAlpha * gyroRoll +
-                        (1.0f - ComplementaryFilterAlpha) * accelRoll;
-  filteredPitchDegrees = ComplementaryFilterAlpha * gyroPitch +
-                         (1.0f - ComplementaryFilterAlpha) * accelPitch;
+  float predictedRollDegrees = filteredRollDegrees + gyroRollRateDps * deltaTime;
+  float predictedPitchDegrees = filteredPitchDegrees + gyroPitchRateDps * deltaTime;
+
+  // Accelerometer angles are relative to the orientation recorded at startup.
+  // Trust gravity more when its magnitude is close to 1 g; during quick linear
+  // motion the accelerometer is less reliable and must not pull the output hard.
+  float accelRollRelative = WrapAngleDegrees(CalculateRollDegrees(sample) - zeroRollDegrees);
+  float accelPitchRelative = WrapAngleDegrees(CalculatePitchDegrees(sample) - zeroPitchDegrees);
+  float accelMagnitudeG = CalculateAccelerometerMagnitudeG(sample);
+  float accelConfidence = CalculateAccelerometerConfidence(accelMagnitudeG);
+
+  // Time-based complementary correction. Unlike a fixed alpha this behaves
+  // consistently if the real I2C sampling period changes slightly.
+  float correctionGain = deltaTime /
+      (OrientationCorrectionTimeConstantSeconds + deltaTime);
+  correctionGain *= accelConfidence;
+
+  // Correct the gyro prediction by the wrapped angle error. This preserves
+  // fast movement while preventing long-term gyro drift and transient spikes.
+  filteredRollDegrees = predictedRollDegrees + correctionGain *
+      WrapAngleDegrees(accelRollRelative - predictedRollDegrees);
+  filteredPitchDegrees = predictedPitchDegrees + correctionGain *
+      WrapAngleDegrees(accelPitchRelative - predictedPitchDegrees);
+
+  // Defend against impossible states if the sensor produces corrupted values.
+  if (!isfinite(filteredRollDegrees)) filteredRollDegrees = 0.0f;
+  if (!isfinite(filteredPitchDegrees)) filteredPitchDegrees = 0.0f;
 }
 
 uint16_t MapTiltToHid(float angleDegrees) {
@@ -853,7 +935,7 @@ void setup() {
   rp2040.wdt_reset();
 
   // Calibration happens only when the corresponding device is present.
-  // Keep the physical controls still and centered during this stage.
+  // Keep the controller still in the intended neutral position for about 3 seconds.
   CalibrateJoystickCenters();
   rp2040.wdt_reset();
 

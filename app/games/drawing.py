@@ -43,9 +43,15 @@ SENSITIVITY_NAMES = list(SENSITIVITY_PRESETS)
 CurrentSensitivityIdx = 1
 PreviousSensitivityButton = 0
 
-RightSign = -1.0    
-ForwardSign = 1.0   
-SwapAxes = True    
+# Mapping for the updated Pico firmware, confirmed in gyro-tester:
+#   Ry increases when tilting away and decreases when tilting toward the user.
+#   Rz increases when tilting left and decreases when tilting right.
+# Pitch is calculated from Ry and Roll from Rz. Keep the axes unswapped:
+#   Rz -> horizontal cursor movement (positive Rz means cursor left)
+#   Ry -> vertical cursor movement (positive Ry means cursor up)
+RightSign = -1.0
+ForwardSign = 1.0
+SwapAxes = False
 
 # HID axes used for the synthetic tilt input.
 TiltAxisX = 4
@@ -846,7 +852,7 @@ def RunResultScreen(Screen, Clock, Font, BigFont, Success, Drawing, Difficulty, 
 
 # ---------- Точка входа ----------
 def main():
-    global WindowWidth, WindowHeight
+    global WindowWidth, WindowHeight, activeDrawingSnapshot
     pygame.init()
     pygame.joystick.init()
 

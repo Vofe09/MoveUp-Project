@@ -3587,6 +3587,818 @@
           }
         ]
       }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "c1ee8908-14b4-432c-b763-19ef0abc0965",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T18:17:18Z",
+      "ended_at": "2026-10-16T18:17:25Z",
+      "duration_seconds": 6.648,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 0,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 3.284,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 92.287,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 28.098,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 183.568,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 423.714,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 88.784,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "3eff1f03-25bb-42ef-a744-9a065f60da86",
+      "game_id": "platformer",
+      "game_title": "Elemental Run",
+      "started_at": "2026-10-16T18:17:28Z",
+      "ended_at": "2026-10-16T18:17:49Z",
+      "duration_seconds": 21.373,
+      "status": "interrupted",
+      "metrics": {
+        "levelAttempts": {
+          "label": "Попытки прохождения уровня",
+          "value": 1,
+          "unit": "шт."
+        },
+        "levelsCompleted": {
+          "label": "Успешно пройденные уровни",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "deaths": {
+          "label": "Смерти персонажей",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runesCollected": {
+          "label": "Собранные руны",
+          "value": 0,
+          "unit": "шт."
+        },
+        "runeCollectionRatePct": {
+          "label": "Доля собранных рун",
+          "value": 0.0,
+          "unit": "%"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 11.477,
+          "unit": "сек."
+        },
+        "firePathLengthPx": {
+          "label": "Траектория персонажа Огня",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "waterPathLengthPx": {
+          "label": "Траектория персонажа Воды",
+          "value": 185.758,
+          "unit": "px"
+        },
+        "fireMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Огня",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "waterMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Воды",
+          "value": 510.768,
+          "unit": "px/сек"
+        },
+        "levelCompletionRatePct": {
+          "label": "Доля успешных попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "movement_model": "two character platformer; speeds and distances measured in game-world pixels",
+        "levels_used": [
+          "ИСКРА"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "level_index": 0,
+            "level_name": "ИСКРА",
+            "difficulty": 1,
+            "outcome": "interrupted",
+            "duration_seconds": 11.477,
+            "deaths": 0,
+            "runes_collected": 0,
+            "runes_available": 10,
+            "fire_path_length_px": 0.0,
+            "water_path_length_px": 185.758,
+            "fire_max_speed_px_per_second": 0.0,
+            "water_max_speed_px_per_second": 510.768
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "7a84622e-b944-41d3-903a-e46a5220958d",
+      "game_id": "maze",
+      "game_title": "Maze",
+      "started_at": "2026-10-16T18:20:01Z",
+      "ended_at": "2026-10-16T18:20:04Z",
+      "duration_seconds": 3.256,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Попытки прохождения",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Успешные прохождения",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "roundsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "wallCollisionCount": {
+          "label": "Столкновения со стенами",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hintCount": {
+          "label": "Использованные подсказки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 1.119,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время попыток",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageDistanceToShortestRoutePx": {
+          "label": "Среднее расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "maxDistanceToShortestRoutePx": {
+          "label": "Максимальное расстояние до кратчайшего маршрута",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "completionRatePct": {
+          "label": "Доля успешных прохождений от всех попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 700
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "difficulty_levels_used": [
+          "Средний"
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "route_deviation_method": "minimum Euclidean distance to any segment of the BFS shortest route"
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "5363b82f-d263-4e2b-8318-3a0b30583623",
+            "outcome": "interrupted",
+            "completed": false,
+            "duration_seconds": 1.1190214039997954,
+            "difficulty": "Средний",
+            "wall_collisions": 0,
+            "hint_count": 0,
+            "path_length_px": 0.0,
+            "speed_sum_px_per_second": 0.0,
+            "speed_squared_sum": 0.0,
+            "speed_samples": 70,
+            "max_speed_px_per_second": 0.0,
+            "movement_active_seconds": 0.0,
+            "active_movement_distance_px": 0.0,
+            "deviation_sum_px": 0.0,
+            "deviation_samples": 70,
+            "max_deviation_px": 0.0,
+            "first_movement_latency_seconds": null,
+            "sensitivity_presets_used": [
+              "Средняя"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "024675ea-331a-4a5e-b688-9829fcb836bc",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T18:20:08Z",
+      "ended_at": "2026-10-16T18:20:11Z",
+      "duration_seconds": 2.745,
+      "status": "interrupted",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 0,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 0,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 0,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 0.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 1.016,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 0.0,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 0.0,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 1,
+          "unit": "режимов"
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "57b44315-52f0-4313-8f97-f597df620f70",
+      "game_id": "puzzle",
+      "game_title": "MoveUp Puzzle",
+      "started_at": "2026-10-16T18:20:51Z",
+      "ended_at": "2026-10-16T18:21:28Z",
+      "duration_seconds": 37.085,
+      "status": "interrupted",
+      "metrics": {
+        "puzzleAttempts": {
+          "label": "Попытки сборки пазла",
+          "value": 1,
+          "unit": "шт."
+        },
+        "puzzlesCompleted": {
+          "label": "Успешно собранные пазлы",
+          "value": 0,
+          "unit": "шт."
+        },
+        "puzzleAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 1,
+          "unit": "шт."
+        },
+        "puzzleAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "piecesPlaced": {
+          "label": "Размещённые детали",
+          "value": 3,
+          "unit": "шт."
+        },
+        "placementAttempts": {
+          "label": "Попытки размещения деталей",
+          "value": 7,
+          "unit": "шт."
+        },
+        "placementErrors": {
+          "label": "Ошибочные размещения",
+          "value": 4,
+          "unit": "шт."
+        },
+        "successfulPlacementRatePct": {
+          "label": "Успешные размещения от всех попыток",
+          "value": 42.857,
+          "unit": "%"
+        },
+        "pieceCompletionRatePct": {
+          "label": "Доля размещённых деталей",
+          "value": 33.333,
+          "unit": "%"
+        },
+        "totalScore": {
+          "label": "Суммарный игровой счёт",
+          "value": 228,
+          "unit": "очков"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время сборки",
+          "value": 22.297,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Суммарная длина траектории курсора",
+          "value": 5572.386,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время сборки",
+          "value": 249.916,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость активного движения",
+          "value": 597.383,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 19022.205,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 683.14,
+          "unit": "px/сек"
+        },
+        "puzzleCompletionRatePct": {
+          "label": "Доля завершённых пазлов",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "cursor_smoothing_factor": 0.22,
+        "movement_active_threshold_px_per_second": 5.0,
+        "grid_sizes_used": [
+          3
+        ],
+        "sensitivity_presets_used": [
+          "Средняя"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "round_id": "a33aba2b-adde-495f-ab5c-08bc6932851f",
+            "picture": "Лесная долина",
+            "grid_size": 3,
+            "outcome": "interrupted",
+            "duration_seconds": 22.297,
+            "total_pieces": 9,
+            "pieces_placed": 3,
+            "placement_attempts": 7,
+            "placement_errors": 4,
+            "successfulPlacementRatePct": 42.857,
+            "score": 228,
+            "cursor_path_length_px": 5572.386,
+            "average_cursor_speed_px_per_second": 249.919,
+            "average_active_movement_speed_px_per_second": 597.373,
+            "active_movement_distance_px": 5572.386,
+            "active_movement_seconds": 9.328,
+            "max_cursor_speed_px_per_second": 19022.205
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "c2b22343-9d58-4f95-b4af-b96cff147b98",
+      "game_id": "platformer",
+      "game_title": "Elemental Run",
+      "started_at": "2026-10-16T18:21:32Z",
+      "ended_at": "2026-10-16T18:23:11Z",
+      "duration_seconds": 99.705,
+      "status": "interrupted",
+      "metrics": {
+        "levelAttempts": {
+          "label": "Попытки прохождения уровня",
+          "value": 3,
+          "unit": "шт."
+        },
+        "levelsCompleted": {
+          "label": "Успешно пройденные уровни",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsRestarted": {
+          "label": "Перезапущенные попытки",
+          "value": 0,
+          "unit": "шт."
+        },
+        "levelAttemptsInterrupted": {
+          "label": "Прерванные попытки",
+          "value": 3,
+          "unit": "шт."
+        },
+        "deaths": {
+          "label": "Смерти персонажей",
+          "value": 3,
+          "unit": "шт."
+        },
+        "runesCollected": {
+          "label": "Собранные руны",
+          "value": 7,
+          "unit": "шт."
+        },
+        "runeCollectionRatePct": {
+          "label": "Доля собранных рун",
+          "value": 23.333,
+          "unit": "%"
+        },
+        "activeGameplaySeconds": {
+          "label": "Суммарное время попыток",
+          "value": 87.489,
+          "unit": "сек."
+        },
+        "firePathLengthPx": {
+          "label": "Траектория персонажа Огня",
+          "value": 2006.742,
+          "unit": "px"
+        },
+        "waterPathLengthPx": {
+          "label": "Траектория персонажа Воды",
+          "value": 6932.315,
+          "unit": "px"
+        },
+        "fireMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Огня",
+          "value": 635.975,
+          "unit": "px/сек"
+        },
+        "waterMaxSpeedPxPerSecond": {
+          "label": "Максимальная скорость Воды",
+          "value": 700.0,
+          "unit": "px/сек"
+        },
+        "levelCompletionRatePct": {
+          "label": "Доля успешных попыток",
+          "value": 0.0,
+          "unit": "%"
+        }
+      },
+      "settings": {
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "movement_model": "two character platformer; speeds and distances measured in game-world pixels",
+        "levels_used": [
+          "ИСКРА",
+          "ПЕРЕЛОМ",
+          "ЯДРО"
+        ]
+      },
+      "details": {
+        "rounds": [
+          {
+            "level_index": 0,
+            "level_name": "ИСКРА",
+            "difficulty": 1,
+            "outcome": "interrupted",
+            "duration_seconds": 44.517,
+            "deaths": 0,
+            "runes_collected": 4,
+            "runes_available": 10,
+            "fire_path_length_px": 1035.921,
+            "water_path_length_px": 1350.86,
+            "fire_max_speed_px_per_second": 635.975,
+            "water_max_speed_px_per_second": 700.0
+          },
+          {
+            "level_index": 1,
+            "level_name": "ПЕРЕЛОМ",
+            "difficulty": 2,
+            "outcome": "interrupted",
+            "duration_seconds": 32.052,
+            "deaths": 3,
+            "runes_collected": 2,
+            "runes_available": 10,
+            "fire_path_length_px": 970.821,
+            "water_path_length_px": 3935.942,
+            "fire_max_speed_px_per_second": 572.451,
+            "water_max_speed_px_per_second": 572.451
+          },
+          {
+            "level_index": 2,
+            "level_name": "ЯДРО",
+            "difficulty": 3,
+            "outcome": "interrupted",
+            "duration_seconds": 10.92,
+            "deaths": 0,
+            "runes_collected": 1,
+            "runes_available": 10,
+            "fire_path_length_px": 0.0,
+            "water_path_length_px": 1645.513,
+            "fire_max_speed_px_per_second": 0.0,
+            "water_max_speed_px_per_second": 602.15
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "metrics_version": 1,
+      "session_id": "333de2d4-cc2a-402c-906c-1af17d427297",
+      "game_id": "shooter",
+      "game_title": "Cyber Shooter",
+      "started_at": "2026-10-16T18:23:22Z",
+      "ended_at": "2026-10-16T18:24:09Z",
+      "duration_seconds": 47.11,
+      "status": "completed",
+      "metrics": {
+        "roundsPlayed": {
+          "label": "Игровые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "roundsCompleted": {
+          "label": "Завершённые раунды",
+          "value": 1,
+          "unit": "шт."
+        },
+        "score": {
+          "label": "Суммарный счёт",
+          "value": 120,
+          "unit": "очков"
+        },
+        "totalShots": {
+          "label": "Всего выстрелов",
+          "value": 8,
+          "unit": "шт."
+        },
+        "hits": {
+          "label": "Попадания",
+          "value": 8,
+          "unit": "шт."
+        },
+        "misses": {
+          "label": "Промахи",
+          "value": 0,
+          "unit": "шт."
+        },
+        "hitRatePerMinute": {
+          "label": "Попадания в минуту",
+          "value": 16.0,
+          "unit": "попаданий/мин"
+        },
+        "activeGameplaySeconds": {
+          "label": "Время активной игры",
+          "value": 30.0,
+          "unit": "сек."
+        },
+        "cursorPathLengthPx": {
+          "label": "Длина траектории курсора",
+          "value": 3157.729,
+          "unit": "px"
+        },
+        "averageCursorSpeedPxPerSecond": {
+          "label": "Средняя скорость курсора за время игры",
+          "value": 105.258,
+          "unit": "px/сек"
+        },
+        "averageActiveMovementSpeedPxPerSecond": {
+          "label": "Средняя скорость во время движения",
+          "value": 221.831,
+          "unit": "px/сек"
+        },
+        "maxCursorSpeedPxPerSecond": {
+          "label": "Максимальная скорость курсора",
+          "value": 606.677,
+          "unit": "px/сек"
+        },
+        "cursorSpeedStandardDeviationPxPerSecond": {
+          "label": "Стандартное отклонение скорости курсора",
+          "value": 170.097,
+          "unit": "px/сек"
+        },
+        "sensitivityPresetsUsedCount": {
+          "label": "Количество использованных режимов чувствительности",
+          "value": 4,
+          "unit": "режимов"
+        },
+        "accuracyPct": {
+          "label": "Точность попаданий",
+          "value": 100.0,
+          "unit": "%"
+        },
+        "averageShotIntervalSeconds": {
+          "label": "Средний интервал между выстрелами",
+          "value": 2.956,
+          "unit": "сек."
+        },
+        "averageTargetAcquisitionTimeSeconds": {
+          "label": "Среднее время от появления цели до попадания",
+          "value": 8.51,
+          "unit": "сек."
+        },
+        "medianTargetAcquisitionTimeSeconds": {
+          "label": "Медианное время от появления цели до попадания",
+          "value": 8.046,
+          "unit": "сек."
+        }
+      },
+      "settings": {
+        "cursor_smoothing_factor": 0.22,
+        "logical_resolution_px": {
+          "width": 900,
+          "height": 650
+        },
+        "sensitivity_presets_used": [
+          "Высокая",
+          "Максимальная",
+          "Низкая",
+          "Средняя"
+        ],
+        "movement_active_threshold_px_per_second": 5.0
+      }
     }
   ]
 }

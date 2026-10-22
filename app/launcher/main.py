@@ -241,10 +241,6 @@ DEFAULT_GAMES = [
 
 
 IGNORED_GAME_DIRECTORY_NAMES = {"assets", ".git", ".venv", "venv", "env", "node_modules"}
-IGNORED_GAME_FILE_NAMES = {
-    "__init__.py",
-    "moveup_stats.py",
-}
 GAME_ENTRYPOINT_NAMES = ("main.py", "game.py", "run.py", "launcher.py", "app.py")
 GAME_ID_ALIASES = {
     "labyrinth": "maze",
@@ -276,9 +272,8 @@ def _is_ignored_game_path(path: Path, root: Path) -> bool:
     for part in relative_parts[:-1] if path.is_file() else relative_parts:
         lowered = part.casefold()
         if "pycache" in lowered or lowered in IGNORED_GAME_DIRECTORY_NAMES:
-            return True 
-        
-    return path.name.casefold() in IGNORED_GAME_FILE_NAMES if path.is_file() else False
+            return True
+    return path.name.casefold() == "__init__.py" if path.is_file() else False
 
 
 def _python_files_under(root: Path) -> list[Path]:
@@ -1872,6 +1867,7 @@ class MoveUpLauncher(QMainWindow):
 
     def _build_catalog_page(self) -> QWidget:
         body = QWidget()
+        body.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
         layout = QVBoxLayout(body)
         layout.setContentsMargins(28, 23, 28, 28)
         layout.setSpacing(16)
@@ -1917,14 +1913,28 @@ class MoveUpLauncher(QMainWindow):
         layout.addWidget(self.catalog_count_label)
 
         self.catalog_grid_host = QWidget()
+        self.catalog_grid_host.setMinimumWidth(0)
+        # Both the scroll content and the grid host must expand horizontally;
+        # otherwise Qt can size the grid to a single card's sizeHint.
+        self.catalog_grid_host.setSizePolicy(
+            QSizePolicy.Policy.Expanding,
+            QSizePolicy.Policy.Preferred,
+        )
         self.catalog_grid = QGridLayout(self.catalog_grid_host)
         self.catalog_grid.setContentsMargins(0, 0, 0, 0)
         self.catalog_grid.setHorizontalSpacing(15)
         self.catalog_grid.setVerticalSpacing(15)
         layout.addWidget(self.catalog_grid_host)
         layout.addStretch(1)
+        # Keep the scroll area so column calculation can use the actual viewport,
+        # rather than a possibly stale/narrow grid-host width.
+        self.catalog_scroll = self._wrap_in_scroll(body)
         self._rebuild_catalog()
-        return self._wrap_in_scroll(body)
+        # The first build happens before the page is attached to the main window.
+        # Repeat after Qt assigns the real window and viewport geometries.
+        QTimer.singleShot(0, self._rebuild_catalog)
+        QTimer.singleShot(150, self._rebuild_catalog)
+        return self.catalog_scroll
 
     def _rebuild_catalog(self, *_args) -> None:
         if not hasattr(self, "catalog_grid"):
@@ -1958,15 +1968,24 @@ class MoveUpLauncher(QMainWindow):
         if hasattr(self, "catalog_count_label"):
             self.catalog_count_label.setText(f"Показано {len(visible_games)} из {len(self.config.games)} игр")
 
-        # Determine the number of columns from the available viewport width.
-        # Cards have a maximum width, so extra screen space creates more columns
-        # rather than stretching two cards across the entire row.
-        grid_width = self.catalog_grid_host.width()
-        if grid_width < 100:
-            grid_width = max(1, self.width() - self.sidebar.width() - 100)
-        card_max_width = 460
+        # Calculate columns from the actual scroll viewport, not grid_host.width().
+        # The host can temporarily retain a one-card sizeHint after startup/maximizing.
+        # Catalog page margins are 28 px on both sides.
+        viewport_width = self.catalog_scroll.viewport().width() if hasattr(self, "catalog_scroll") else 0
+        if viewport_width < 100:
+            sidebar_width = self.sidebar.width() if hasattr(self, "sidebar") else 190
+            viewport_width = max(1, self.width() - sidebar_width - 20)
+        grid_width = max(1, viewport_width - 56)
+        # Keep the grid host as wide as the content area. This is important because
+        # QScrollArea can otherwise leave the child close to its sizeHint, producing
+        # a narrow centered column even on a wide/full-screen window.
+        self.catalog_grid_host.setMinimumWidth(grid_width)
+        card_target_width = 320
         horizontal_spacing = self.catalog_grid.horizontalSpacing()
-        column_count = max(1, (grid_width + horizontal_spacing) // (card_max_width + horizontal_spacing))
+        column_count = max(
+            1,
+            (grid_width + horizontal_spacing) // (card_target_width + horizontal_spacing),
+        )
         self.catalog_columns = int(column_count)
 
         for index, game in enumerate(visible_games):
@@ -2679,6 +2698,9 @@ class MoveUpLauncher(QMainWindow):
             self._refresh_results_page()
         elif key == "game_stats":
             self._refresh_game_stats_page()
+        if key == "catalog":
+            # The stacked page may have changed size since the last time it was visible.
+            QTimer.singleShot(0, self._rebuild_catalog)
 
     def launch_game(self, game_id: str) -> None:
         game = next((item for item in self.config.games if item.id == game_id), None)
@@ -3118,14 +3140,8 @@ class MoveUpLauncher(QMainWindow):
         super().resizeEvent(event)
         if not hasattr(self, "catalog_grid_host"):
             return
-        grid_width = self.catalog_grid_host.width()
-        if grid_width < 100:
-            return
-        card_max_width = 460
-        horizontal_spacing = self.catalog_grid.horizontalSpacing()
-        desired_columns = max(1, (grid_width + horizontal_spacing) // (card_max_width + horizontal_spacing))
-        if int(desired_columns) != self.catalog_columns:
-            QTimer.singleShot(0, self._rebuild_catalog)
+        # Defer until the scroll viewport and its layouts have updated their geometry.
+        QTimer.singleShot(0, self._rebuild_catalog)
 
     def closeEvent(self, event) -> None:  # noqa: N802 - Qt override
         # Finalize children that have already exited; retain observed time for still-running children.
